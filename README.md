@@ -5,7 +5,7 @@
 
 ## Pages
 1. login & Signup : 로그인 & 회원가입
-2. Catagroi : 새로운 소품샵 추가
+2. Category : 카테고리별
 3. Mypage : 마이페이지
   - Notice : 공지사항
   - Checklist : 체크리스트
