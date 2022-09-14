@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SWOT</string>
+    <string-array name="spinner_year">
+        <item>어학</item>
+        <item>IT/컴퓨터</item>
+        <item>공무원</item>
+        <item>자격증</item>
+        <item>중 고등</item>
+        <item>편입</item>
+        <item>기타</item>
+    </string-array>
+
+</resources>

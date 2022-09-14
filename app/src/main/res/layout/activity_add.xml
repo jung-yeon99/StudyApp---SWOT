@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#DFD1ED"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/studyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nanumbarunpen"
+            android:text="스터디 이름 :"
+            android:textColor="#999999"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar10" />
+
+        <EditText
+            android:id="@+id/studyeditname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:fontFamily="@font/nanumbarunpen"
+            android:hint="이름을 입력하세요."
+            android:inputType="textPersonName"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/studyname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/studyname"
+            app:layout_constraintTop_toTopOf="@+id/studyname"
+            app:layout_constraintVertical_bias="0.692"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,UnknownId" />
+
+        <TextView
+            android:id="@+id/say"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nanumbarunpen"
+            android:text="공지사항"
+            android:textColor="#999999"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/studyname"
+            app:layout_constraintTop_toBottomOf="@+id/studyname"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/studyeditname3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:fontFamily="@font/nanumbarunpen"
+            android:inputType="textPersonName"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/openchat"
+            app:layout_constraintEnd_toEndOf="@+id/studyeditname2"
+            app:layout_constraintStart_toEndOf="@+id/openchat"
+            app:layout_constraintTop_toTopOf="@+id/openchat"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/openchat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/nanumbarunpen"
+            android:text="채팅방 주소 :"
+            android:textColor="#999999"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/favorite"
+            app:layout_constraintTop_toBottomOf="@+id/favorite" />
+
+        <EditText
+            android:id="@+id/studyeditname2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_round"
+            android:ems="10"
+            android:fontFamily="@font/nanumbarunpen"
+            android:inputType="textShortMessage|textMultiLine|textPersonName"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="@+id/studyeditname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/say"
+            app:layout_constraintTop_toBottomOf="@+id/say"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nanumbarunpen"
+            android:text="선호하는 수업 방식"
+            android:textColor="#999999"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/studyeditname2"
+            app:layout_constraintTop_toBottomOf="@+id/studyeditname2" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="133dp"
+            android:layout_height="36dp"
+            android:fontFamily="@font/nanumbarunpen"
+            android:gravity="center"
+            android:text="스터디 생성"
+            android:textColor="#64656A"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/toolbar10"
+            app:layout_constraintTop_toTopOf="@+id/toolbar10" />
+
+        <TextView
+            android:id="@+id/introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nanumbarunpen"
+            android:text="한줄 소개 (선택)"
+            android:textColor="#999999"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/max"
+            app:layout_constraintTop_toBottomOf="@+id/max" />
+
+        <TextView
+            android:id="@+id/max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nanumbarunpen"
+            android:text="최대 인원"
+            android:textColor="#999999"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/openchat"
+            app:layout_constraintTop_toBottomOf="@+id/openchat" />
+
+        <EditText
+            android:id="@+id/studyeditname5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_round"
+            android:ems="10"
+            android:fontFamily="@font/nanumbarunpen"
+            android:inputType="textPersonName"
+            android:padding ="5dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/introduce"
+            app:layout_constraintTop_toBottomOf="@+id/introduce"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/pen2"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/studyeditname"
+            app:layout_constraintEnd_toEndOf="@+id/studyeditname"
+            app:layout_constraintTop_toTopOf="@+id/studyeditname"
+            app:srcCompat="@drawable/pen" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/nanumbarunpen"
+            android:text="대면"
+            android:textColor="@color/textgrey"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/favorite"
+            app:layout_constraintStart_toEndOf="@+id/favorite"
+            app:layout_constraintTop_toTopOf="@+id/favorite" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumbarunpen"
+            android:text="비대면"
+            android:textColor="@color/textgrey"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/radioButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioButton"
+            app:layout_constraintTop_toTopOf="@+id/radioButton" />
+
+        <Button
+            android:id="@+id/make"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#DFD1ED"
+            android:fontFamily="@font/nanumbarunpen"
+            android:text="개설하기"
+            android:textColor="@color/textgrey"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/studyeditname5"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/max"
+            app:layout_constraintEnd_toEndOf="@+id/studyeditname3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/studyeditname3"
+            app:layout_constraintTop_toTopOf="@+id/max"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5443609" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

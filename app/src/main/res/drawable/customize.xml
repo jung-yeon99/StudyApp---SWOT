@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:drawable="@drawable/home"
+    android:layout_width="42dp"
+    android:layout_height="45dp"
+    android:adjustViewBounds="true"
+    android:background="#00ffffff"
+    android:scaleType="fitXY"
+    />
+</layer-list>
+
+
