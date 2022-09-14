@@ -22,3 +22,8 @@
 ## Backend
 
 - DB : Firebase
+
+## With
+FrontEnd : @jung-yeon99
+FrontEnd : @hyeonjin9819
+Backend : @jiyoon0701
