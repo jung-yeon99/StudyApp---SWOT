@@ -26,4 +26,4 @@
 ## With
 - FrontEnd : @jung-yeon99
 - FrontEnd : @hyeonjin9819
-- Backnd : @jiyoon0701
+- BackEnd : @jiyoon0701
